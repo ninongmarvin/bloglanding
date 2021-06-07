@@ -1,0 +1,12 @@
+.background-image{
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/22/21/26/notebook-1850613_960_720.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+
+.curs{
+  font-family: 'Brush Script MT', Brush Script Std, cursive;
+}
