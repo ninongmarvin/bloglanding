@@ -9,42 +9,61 @@
   </head>
   <body>
 
-    <div class="bg-gray-400 fixed w-full">
+    <div class="bg-transparent lg:bg-gray-400 fixed w-full">
       <div class="flex justify-between text-center items-center font-semibold text-xl p-5">
-        <div class="text-blue-700">
+        <div class="text-blue-700 lg:text-2xl text-4xl">
           <a href="#">
             <i class="fas fa-square-full"> Blog</i>
           </a>
         </div>
-        <div class="space-x-8 text-gray-900">
+        <div class="space-x-8 text-gray-900 invisible lg:visible">
           <a href="#">Home</a>
           <a href="#">Posts</a>
           <a href="#">Create</a>
           <a href="#">Notifications</a>
         </div>
-        <div class="space-x-8 text-gray-900">
+        <div class="space-x-8 text-gray-900 invisible lg:visible">
           <a href="#">User Name</a>
           <a href="#">Logout</a>
         </div>
       </div>
+
+      <div class="flex justify-start pl-5 lg:hidden">
+        <div class="flex flex-col">
+          <div class="flex justify-center items-center text-blue-700 text-4xl">
+            <button class="mobile-button" name="button">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="flex flex-col text-2xl font-bold text-gray-400 space-y-5 justify-center items-center mobile-menu bg-gray-900 p-10 hidden">
+            <a href="#">Home</a>
+            <a href="#">Posts</a>
+            <a href="#">Create</a>
+            <a href="#">Notifications</a>
+            <a href="#">User Name</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="background-image flex flex-col justify-center">
+    <div class="background-image h-screen flex flex-col justify-center">
       <div class="p-20">
-        <h1 class="py-10 text-6xl uppercase font-extrabold text-white tracking-wide text-gray-800">Write Blogs</h1>
-        <a href="#" class="p-5 font-extrabold text-3xl bg-transparent border border-white text-white hover:bg-gray-900 hover:text-white tracking-wider rounded-full text-gray-600">Get Started</a>
+        <h1 class="py-10 text-8xl lg:text-6xl uppercase font-extrabold text-gray-500 tracking-wide lg:text-gray-800">Write Blogs</h1>
+        <a href="#" class="p-5 font-extrabold text-5xl lg:text-3xl bg-transparent border border-white text-gray-500 hover:bg-gray-900 hover:text-white tracking-wider rounded-full lg:text-gray-600">Get Started</a>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 w-4/5 m-auto py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 w-4/5 m-auto py-20">
       <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2017/01/18/08/25/social-media-1989152_960_720.jpg" alt="">
       <div class="bg-gray-400 p-10">
-        <h1 class="text-3xl text-center pb-5 font-extrabold text-gray-900">Lorem</h1>
-        <p class="leading-7 font-medium italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <h1 class="text-6xl lg:text-3xl text-center pb-5 font-extrabold text-gray-900">Lorem</h1>
+        <p class="leading-10 lg:text-base text-3xl font-medium italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
     </div>
 
-    <div class="bg-gray-400 w-full p-10 mb-10 text-center text-gray-900">
+    <div class="bg-gray-400 w-full p-10 mb-10 lg:text-base text-3xl text-center text-gray-900">
       <h1 class="text-2xl">Share your blogs
         <span>
           <i class="fas fa-share"></i>
@@ -63,23 +82,23 @@
       </h1>
     </div>
 
-    <div class="flex justify-center items-center space-x-8 mx-10 mb-20">
+    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:space-x-8 lg:mx-10 mb-20 p-10 lg:p-0">
       <div>
-        <img src="https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068_960_720.jpg" alt="">
+        <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068_960_720.jpg" alt="">
         <div class="text-center p-5 border-b border-gray-500">
           <h1 class="pb-5 text-gray-900 font-extrabold text-2xl">Lorem Melor</h1>
           <p class="italic tracking-wider font-semibold text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
         </div>
       </div>
       <div>
-        <img src="https://cdn.pixabay.com/photo/2016/01/19/17/48/woman-1149911_960_720.jpg" alt="">
+        <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2016/01/19/17/48/woman-1149911_960_720.jpg" alt="">
         <div class="text-center p-5 border-b border-gray-500">
           <h1 class="pb-5 text-gray-900 font-extrabold text-2xl">Lorem Melor</h1>
           <p class="italic tracking-wider font-semibold text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
         </div>
       </div>
       <div>
-        <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="">
+        <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="">
         <div class="text-center p-5 border-b border-gray-500">
           <h1 class="pb-5 text-gray-900 font-extrabold text-2xl">Lorem Melor</h1>
           <p class="italic tracking-wider font-semibold text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -87,14 +106,18 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 w-4/5 m-auto mb-20">
+    <div class="flex justify-center items-center mb-20">
+      <h1 class="text-5xl font-extrabold text-gray-900">Most Recent Post</h1>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 w-4/5 m-auto mb-20">
       <div class="">
         <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2014/02/13/07/28/wordpress-265132_960_720.jpg" alt="">
       </div>
-      <div class="p-5 bg-gray-300">
-        <h1 class="text-gray-900 text-center font-extrabold text-3xl pb-5 border-b border-gray-500 mb-5">Why you should start blogging</h1>
-        <p class="tracking-wider font-light italic text-gray-700 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-        <a href="#" class="text-gray-900 text-2xl p-3 border border-gray-900 hover:bg-gray-900 hover:text-white rounded-full">Read more</a>
+      <div class="p-7 bg-gray-300">
+        <h1 class="text-gray-900 text-center font-extrabold text-4xl lg:text-3xl pb-5 border-b border-gray-500 mb-5">Why you should start blogging</h1>
+        <p class="tracking-wider lg:text-base text-2xl font-light italic text-gray-700 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+        <a href="#" class="text-gray-900 text-3xl lg:text-2xl p-3 border border-gray-900 hover:bg-gray-900 hover:text-white rounded-full">Read more</a>
       </div>
     </div>
 
@@ -102,7 +125,7 @@
       <a href="#" class="text-3xl font-extrabold text-gray-600 uppercase">All posts</a>
     </div>
 
-    <footer class="bg-gray-900 p-20">
+    <footer class="bg-gray-900 p-20 lg:text-base text-2xl">
       <div class="flex justify-evenly">
         <div class="flex flex-col">
           <a href="#" class="py-2 text-gray-500">Lorem</a>
@@ -125,5 +148,6 @@
         <h1 class="text-gray-500 text-xl uppercase">&copy; 2021</h1>
       </div>
     </footer>
+    <script type="text/javascript" src="./public/styles.js"></script>
   </body>
 </html>
