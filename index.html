@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div class="bg-transparent lg:bg-gray-400 fixed w-full">
+    <div class="bg-gray-400 fixed w-full">
       <div class="flex justify-between text-center items-center font-semibold text-xl p-5">
         <div class="text-blue-700 lg:text-2xl text-4xl">
           <a href="#">
@@ -26,16 +26,17 @@
           <a href="#">User Name</a>
           <a href="#">Logout</a>
         </div>
+
+        <div class="flex justify-center items-center text-blue-700 text-4xl lg:hidden">
+          <button class="mobile-button" name="button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </div>
 
-      <div class="flex justify-start pl-5 lg:hidden">
+      <div class="flex justify-start pl-5 bg-gray-900 lg:hidden">
         <div class="flex flex-col">
-          <div class="flex justify-center items-center text-blue-700 text-4xl">
-            <button class="mobile-button" name="button">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <div class="flex flex-col text-2xl font-bold text-gray-400 space-y-5 justify-center items-center mobile-menu bg-gray-900 p-10 hidden">
+          <div class="flex flex-col text-2xl font-bold text-gray-400 space-y-5 mobile-menu py-3 hidden">
             <a href="#">Home</a>
             <a href="#">Posts</a>
             <a href="#">Create</a>
